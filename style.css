@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: hsl(204, 43%, 93%);
+    padding-top: 90px;
+    font-family: 'Karla', sans-serif;
+}
+.container {
+    width: 50%;
+    margin: auto;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    margin-bottom: 40px;
+    box-shadow: 0px 1px 10px hsl(218, 22%, 67%);
+}
+.top {
+    grid-column: 1/3;
+    min-height: 200px;
+    /* grid-auto-rows: minmax(200px, auto); */
+    /* border-bottom: 1px solid black; */
+    /* background-color: white; */
+    padding: 30px;
+    width: 100%;
+}
+.top h2 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+}
+.top  h4 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+}
+.top p {
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+}
+.left {
+    min-height: 230px;
+    background-color:hsl(179, 62%, 43%);
+    padding: 30px;
+    color: white;
+    border-bottom-left-radius: 8px;
+}
+.left h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.left p {
+    margin-top: 10px;
+}
+.left button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 26px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px hsl(218, 22%, 67%);
+}
+.right {
+    min-height: 230px;
+    background-color:hsl(179, 80%, 41%);
+    padding: 30px;
+    color: white;
+    border-bottom-right-radius: 8px;
+}
+.right h4 {
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-size: 15px;
+    color: hsl(204, 43%, 93%);
+}
+.doll {
+    font-size: 30px;
+}
+.per {
+    margin-left: 10px;
+    color:  hsl(204, 43%, 93%);
+    padding-bottom: 20px;
+}
+
+
+@media (max-width:1000px) {
+    .container {
+        width: 60%;
+    }
+}
+@media (max-width:850px) {
+    .container {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .top {
+        grid-column: 1/1;
+    }
+    .left {
+        border-bottom-left-radius: 0;
+    }
+    .right {
+        border-bottom-left-radius: 8px;
+    }
+}
+
+
+@media (max-width:500px) {
+    .container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .top {
+        grid-column: 1/1;
+    }
+    .left {
+        border-bottom-left-radius: 0;
+    }
+    .right {
+        border-bottom-left-radius: 8px;
+    }
+}
+
+
+l(179, 35%, 49%)
